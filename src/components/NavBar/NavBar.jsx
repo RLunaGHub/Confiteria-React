@@ -1,37 +1,41 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
-
-
-
-
-import { CartWidget } from "../CartWidget/CartWidget"
-import logo from "./assets/logo.jpg"
+import { Navbar, Container, Nav } from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
+import { CartWidget } from "../CartWidget/CartWidget";
+import logo from "./assets/logo.jpg";
 
 const stylesLogo = {
-    img: {
-        height: 35
-    }
-   
-}
+  img: {
+    height: 35,
+  },
+};
 
-export const NavBar  = () => {
-    return (
-        <header>
-    <Navbar bg="dark" variant="dark">
-    <Container>
-       <img src={logo} alt="Imagen de logo forma de torta" style={stylesLogo.img} />
-        <Navbar.Brand href="#home">Confitería React</Navbar.Brand>
-      <Nav className="me-auto">
-        <Nav.Link href="#">Home</Nav.Link>
-        <Nav.Link href="#">Productos</Nav.Link>
-        <Nav.Link href="#">Contacto</Nav.Link>
-      </Nav>
-      <CartWidget />
-    </Container>
-  </Navbar>
-   
+export const NavBar = () => {
+  return (
+    <header>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <img
+            src={logo}
+            alt="Imagen de logo forma de torta"
+            style={stylesLogo.img}
+          />
+          <Navbar.Brand href="#home">Confitería React</Navbar.Brand>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <NavLink to={"/category/tortas"} className="NavLinkStyle">
+                Tortas
+              </NavLink>
+              <NavLink to={"/category/panaderia"} className="NavLinkStyle">
+                Panadería
+              </NavLink>
+              <NavLink to={"/category/confitería"} className="NavLinkStyle">
+                Confitería
+              </NavLink>
+            </Nav>
+            <CartWidget />
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </header>
-    );
-}
+  );
+};
