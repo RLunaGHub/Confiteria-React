@@ -4,7 +4,7 @@ const Item = ({ id, name, img, price, stock }) => {
   return (
     <article className="CardItem">
       <header className="Header">
-        <h2 className="IteamHeader" id="cardTitle">
+        <h2 className="ItemHeader" id="cardTitle">
           {name}
         </h2>
       </header>

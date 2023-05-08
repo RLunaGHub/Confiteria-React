@@ -217,8 +217,8 @@
 }
 
 .ItemImage {
-  width: auto;
-  height: auto;
+  width: 200;
+  height: 300;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }

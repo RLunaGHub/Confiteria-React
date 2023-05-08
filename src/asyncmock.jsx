@@ -56,7 +56,7 @@ const products = [
     img: "../img/tira.jpg",
     description:
       "Pionono de café bien húmedo, batido de queso, crema y salsa inglesa. Cobertura: cacao en polvo",
-    prize: 4200,
+    price: 4200,
     stock: 8,
     category: "tortas",
   },
@@ -93,7 +93,7 @@ const products = [
   {
     id: 10,
     name: "Cheesecake",
-    img: "cheesecake.jpg",
+    img: "../img/cheesecake.jpg",
     description:
       "Suave pionono de vainilla, batido de queso crema, jugo y rayadura de limón. Cobertura: geleé de frutos rojos",
     price: 4800,
