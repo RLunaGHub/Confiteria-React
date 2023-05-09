@@ -122,6 +122,26 @@ const products = [
     stock: 8,
     category: "tortas",
   },
+  {
+    id: 13,
+    name: "Masas",
+    img: "../img/masas.jpg",
+    description:
+      "Profiteroles rellenos, cañoncitos rellenos, palmeritas, minipostres, tocinito del cielo, coco con dulce de leche, copitos de dulce de leche, macarrones, merenguitos",
+    price: 5100,
+    stock: 8,
+    category: "panaderia",
+  },
+  {
+    id: 14,
+    name: "Tartas",
+    img: "../img/tartas.jpg",
+    description:
+      "Profiteroles rellenos, cañoncitos rellenos, palmeritas, minipostres, tocinito del cielo, coco con dulce de leche, copitos de dulce de leche, macarrones, merenguitos",
+    price: 800,
+    stock: 12,
+    category: "salados",
+  },
 ];
 
 export const getProducts = () => {

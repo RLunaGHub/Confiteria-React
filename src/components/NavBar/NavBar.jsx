@@ -1,5 +1,5 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { CartWidget } from "../CartWidget/CartWidget";
 import logo from "./assets/logo.jpg";
 
@@ -19,7 +19,7 @@ export const NavBar = () => {
             alt="Imagen de logo forma de torta"
             style={stylesLogo.img}
           />
-          <Navbar.Brand href="#home">Confitería React</Navbar.Brand>
+          <Navbar.Brand href="/">Confitería React</Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavLink to={"/category/tortas"} className="NavLinkStyle">
@@ -28,8 +28,8 @@ export const NavBar = () => {
               <NavLink to={"/category/panaderia"} className="NavLinkStyle">
                 Panadería
               </NavLink>
-              <NavLink to={"/category/confitería"} className="NavLinkStyle">
-                Confitería
+              <NavLink to={"/category/salados"} className="NavLinkStyle">
+                Salados
               </NavLink>
             </Nav>
             <CartWidget />
