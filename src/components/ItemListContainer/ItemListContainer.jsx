@@ -30,7 +30,6 @@ const ItemListContainer = ({ greeting }) => {
         <>
           <h1 className="greeting">{greeting}</h1>
           <br />
-          <section id="SectionHome"></section>
         </>
       ) : null}
       <ItemList products={products} />

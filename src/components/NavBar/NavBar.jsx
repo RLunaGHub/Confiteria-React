@@ -9,6 +9,7 @@ const stylesLogo = {
   },
 };
 
+//Componente de navegación - Bootstrap + react router  dom
 export const NavBar = () => {
   return (
     <header>

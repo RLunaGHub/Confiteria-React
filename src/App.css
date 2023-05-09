@@ -41,55 +41,36 @@
 /*Estilos de la section del Home*/
 /*Estilos de la section del Home*/
 /*Estilos de la section del Home*/
-#SectionHome{
-  display: flex;
-  width: auto;
-  height: 500px;
-}
 
-#SectionHome img{
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: .8;
-  transition: .5s ease;
-}
 
-#SectionHome img:hover{
-  cursor: crosshair;
-  width: 300px;
-  opacity: 1;
-  filter: contrast(120%);
-}
-
-/*Estilos NAVBAR*/
+/*NAVBAR*/
 .NavLinkStyle {
   text-decoration: none;
   padding: 0;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   border: none;
-  color: #000;
+  color: #5f0891c5;
   transition: all 0.2s ease-in-out;
 }
 
 .NavLinkStyle:hover {
   font-weight: bold;
   transform: scale(1.1); 
-  color: #f8558b;
+  color: #ac4703;
 }
 
 
 
-/*Estilos del componente ITEMCOUNT*/
+/*Componente ItemCount*/
 .Counter {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
   background-color: #FFF3F8;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -105,18 +86,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
-  background-color: #BC808E;
-  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #ac4703;
+  border-radius: 60%;
   border: none;
-  font-size: 18px;
-  color: #282c34;
+  font-size: 20px;
+  color: #050505;
   cursor: pointer;
 }
 
 .Button:hover {
-  background-color: #BC808E;
+  background-color: #ac4703;
 }
 
 .Number {
@@ -132,18 +113,18 @@
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #BC808E;
+  background-color: #ac4703;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 16px;
   color: #fff;  
   cursor: pointer;
 }
 
 .ButtonAdd:hover {
-  background-color: #BC808E;
+  background-color: #ac4703;
   font-weight: bold;  
-  color: #333;
+  color: #080808;
 }
 
 .ButtonAdd:disabled {
@@ -165,10 +146,10 @@
   display: inline-flex;
   flex-direction: column;
   width: 300px;
-  height: 534px;
-  margin: 20px;
-  background-color: whitesmoke;
-  border-radius: 10px;
+  height: 450px;
+  margin: 30px;
+  background-color: rgb(192, 177, 177);
+  border-radius: 20px;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
@@ -177,10 +158,10 @@
 .CardItemDetail{
   display: inline-flex;
   flex-direction: column;
-  width: 400px;
-  height: 740px;
+  width: 300px;
+  height: 450px;
   margin: 20px;
-  background-color: whitesmoke;
+  background-color: rgb(192, 177, 177);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -200,8 +181,8 @@
 }
 
 .Header {
-  background-color:#BC808E;
-  color: white;
+  background-color:#ac4703;
+  color: rgb(192, 177, 177);
   padding: 10px;
   text-align: center;
   border-radius: 10px 10px 0px 0px;
@@ -231,19 +212,19 @@
 }
 
 .ItemFooter {
-  background-color: #BC808E;
-  color: white;
+  background-color: #ac4703;
+  color: rgb(221, 221, 221);
   padding: 10px;
   text-align: center;
   border-radius: 0px 0px 10px 10px;
 }
 
 .Option {
-  background-color: #f8558b;
-  color: white;
+  background-color: rgb(221, 221, 221);
+  color: rgb(7, 7, 7);
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
+  border-radius: 30px;
+  padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
