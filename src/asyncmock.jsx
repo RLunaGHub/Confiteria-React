@@ -167,8 +167,3 @@ export const getProductsByCategory = (category) => {
     }, 500);
   });
 };
-
-//Se genera el archivo asyncmock con un array que nuclea la información de los productos y sus categorías
-//Se define y exporta una función llamada getProducts que se resuelve luego de 500ms antes de retornar el array
-//Se define exporta una función llamada getProductId para encontrar un producto determinado x ID
-//Se define exporta una función llamada getProductCategory para encontrar un producto determinado x Categoria

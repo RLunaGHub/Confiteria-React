@@ -29,7 +29,6 @@ const ItemListContainer = ({ greeting }) => {
       {isRoot ? (
         <>
           <h1 className="greeting">{greeting}</h1>
-          <br />
         </>
       ) : null}
       <ItemList products={products} />
@@ -38,9 +37,3 @@ const ItemListContainer = ({ greeting }) => {
 };
 
 export default ItemListContainer;
-
-//Se define el componente ItemListContainer que será el contenedor del listado de productos.
-//Se utiliza el hook useEffect para realizar una petición asíncrona a la función getProducts.
-//Se incorpora el componente ItemList para que se renderice dentro del ItemListContainer.
-//Se genera una variable booleana que inicialice como true si la aplicación se encuentra en '/' o false caso contrario.
-//Se utiliza el hook useLocation para renderizar el contenido del greeting, unicamente si la aplicación se encuentra en su Home '/'
